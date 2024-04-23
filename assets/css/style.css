@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,700;0,900;1,100;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap');
+
+body{
+    font-family: 'Roboto' , sens-serif;
+}
+
+.container{
+    width: 75%;
+}
+.navbar .buttn{
+    background-color: #ff724c;
+}
+.navbar .nav-link .active{
+    color: #313335;
+    font-size: 15px
+}
+.navbar .nav-link{
+    color: #818181;
+    margin-right: 15px;
+    font-weight: 400;
+    position: relative;
+    padding: 10px 0;
+}
+.navbar .nav-link::after{
+    content:'' ;
+position: absolute;
+bottom: 0;
+height: 2px;
+left: 0;
+background-color: #ff724c;
+width: 0%;
+transition: width 1s;
+}
+.navbar .nav-link:hover::after{
+    width: 100%;
+
+}
+.navbar .nav-link.active::after{
+   width: 100%;
+}
+.buttn span{
+
+font-size: 14px;
+}
+.buttn i{
+    transition: .5s;
+}
+.buttn:hover i{
+    transform: rotate(360deg);
+    background-color: #313335 !important ;
+    color: white !important;
+}
+header{
+    background-image: url(../images/introbg5.png );
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header-content span, .header-content p{
+    color:#313335;
+    font-size: 23px;
+font-weight: 500;
+font-family: 'raleway';
+}
+h1,h2{
+    font-size: 60px;
+    font-family: 'dosis';
+}
+h2{
+    font-size: 50px;
+}
+.Social .icon i{
+
+    width: 30px;
+   height: 30px;
+   text-align: center;
+   line-height: 30px;
+   color: #3b5999;
+   border: 1px solid #3b5999;
+cursor: pointer;
+transition: transform .5s, background-color .5s;
+
+}
+.Social .icon:nth-of-type(2) i {
+    color:#ea4c89;
+    border-color: #ea4c89;
+}
+.Social .icon:nth-of-type(3) i {
+
+    color:#1769ff;
+    border-color: #1769ff;
+
+}
+
+.Social .icon:nth-of-type(4) i {
+    color:#0077b5;
+    border-color: #0077b5;
+
+
+}
+.Social .icon:nth-of-type(5) i{
+    color:#dd4b39;
+    border-color: #dd4b39;
+
+}
+
+.Social .icon i:hover{
+    transform: rotate(360deg);
+    background-color: #3b5999;
+    color: white;
+}
+
+.Social .icon:nth-of-type(2) i:hover {
+   background-color: #ea4c89;
+
+}
+.Social .icon:nth-of-type(3) i:hover {
+    background-color: #1769ff;
+ 
+ }
+ 
+ .Social .icon:nth-of-type(4) i:hover {
+    background-color: #0077b5;
+ 
+ }
+ .Social .icon:nth-of-type(5) i:hover {
+
+    background-color: #dd4b39;
+ }
+ .about .container > .row {
+    width: 90%;
+    margin: auto;
+ }
+.about .about-content{
+    background-color: #4e4e4e;
+}
+.description{
+    background-color: #ff724c;
+}
+.about .title span{
+    position: absolute;
+    left: -10px;
+    top: -30px;
+    
+}
+.about .description p{
+font-size: 14px;
+
+}
+.eye-icon{
+    border-bottom-left-radius: 23px;
+    border-top-left-radius: 23px;
+
+    }
+.description a span {
+color: #4e4e4e;
+}
+.description a:hover i{
+color: #ff724c !important ;
+}
+.title span{
+border-color: #ff724c !important ;
+}
+h3{
+    font-size: 18px;
+    color: #3b3b3b;
+}
+.services{
+    color: #3b3b3b;
+}
+.test {
+font-size: 18px;
+
+}
+
+.test p{
+    font-size: 13px;
+   
+}
+
+.test::after{
+    content: '';
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:100;
+    right: 0;
+    border-radius:10px;
+    z-index:-1;
+    background-color: #f3f3f3;
+    transition:.5s;
+}
+.test:hover{
+bottom:0%;
+
+}
+.portfolio{
+    color: #3b3b3b;
+
+}
+.portfolio .nav-link{
+    font-size: 14px;
+    color: #3b3b3b;
+    font-family: 'raleway';
+
+}
+.portfolio .nav-link:hover{
+border: none !important ;
+}
+.portfolio .nav-link.active{
+background-color: #ff724c;
+color: white;
+}
+.portfolio .nav-link{
+    margin-right: 15px;
+}
+.portfolio{
+    background-color: #f3f3f3;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scaleY(0);
+    transition: 0.5s;
+
+}
+.overlay i{
+   color: white;
+   padding: 12px;
+   background-color: #ff724c;
+   font-size: 15px;
+   border-radius: 50%;
+transform: scale(0);
+transition: .5s 0.2s;
+}
+.portfolio-item:hover .overlay{
+transform:scaleY(1);
+}
+.portfolio-item:hover .overlay i{
+    transform: scale(1) rotate(360deg);
+
+}
+.overlay i:hover {
+background-color: transparent;
+border: 1px solid #ff724c;
+color: #ff724c;
+}
+.info{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    opacity: 0;
+    transition: bottom 0.5s opacity 0.5s;
+}
+.portfolio-item:hover .info{
+bottom: 0;
+opacity: 1;
+}
+
